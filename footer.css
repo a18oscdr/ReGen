@@ -267,7 +267,7 @@
      display: block;
      border-bottom: 1px solid #1d1d1d;
      padding-bottom: 10px;
-     padding-right: 460px; /* Give space on the right for the "+" sign */
+     padding-right: 160px; /* Give space on the right for the "+" sign */
       position: relative; /* Make this the containing block for positioning */
      width: 100%;
    }
@@ -417,6 +417,7 @@
     width: 80%; /* Makes the grid container 80% of the footer width */
     margin: 0 auto; 
     padding-top: 10px;
+    flex-wrap: wrap;
  
   }
   .grid-container-payment div {
