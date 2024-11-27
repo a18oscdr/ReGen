@@ -1,0 +1,257 @@
+header {
+    padding-bottom: 20px;
+
+}
+.grid-container-notification {
+    display: flex;
+    justify-content: space-between; 
+    padding: 8px 157px;
+    align-items: center;
+    gap: 30px; 
+    background: var(--New-Primary, #D8DFCD);
+    margin-bottom: 20px;
+}
+
+.grid-item-notification {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-item-notification img {
+    width: 24px; 
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.grid-item-notification p {
+    margin: 0;
+}
+
+.grid-item-notification:hover img {
+    transform: scale(1.4);  
+    color: #007BFF;
+}
+.grid-item-notification:hover p {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.grid-container-top-bar {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.grid-container-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 157px;
+    gap: 30px;
+}
+
+.grid-container-logo-header {
+    width: 135px;
+    height: 27px;
+    flex-shrink: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.grid-container-right-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 12px;
+    color: var(--Black, #111);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px; 
+}
+
+.grid-container-right-profile:hover{
+ transform: scale(1.2);  
+ color: #007BFF;
+ cursor: pointer;
+
+}
+
+
+
+
+
+
+.grid-container-desktop-menu {
+    display: flex;
+    justify-content: center;
+    gap: 60px; 
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.grid-container-desktop-menu:hover p{
+ transform: scale(1.1);  
+ color: #007BFF;
+ cursor: pointer;
+}
+
+
+
+
+
+
+.grid-container-search {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: 10px; 
+    margin-left: 20px;
+    padding-top: 20px;
+    
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* ----------- Mobile --------------- */
+@media (max-width: 768px) {
+    /* Hide desktop elements */
+    .grid-container-notification,
+    .grid-container-desktop-menu {
+        display: none;
+    }
+
+    /* Show only required elements for mobile */
+    .grid-container-logo-header {
+        display: block;
+        align-items: center;
+    }
+
+    .grid-container-right-profile > div:nth-child(3) { /* The 'kassa' icon */
+        display: block;
+    }
+
+    /* Show search section */
+    .grid-container-search {
+        display: flex;
+        gap: 10px;
+    }
+
+    /* Layout adjustments for the mobile presentation section */
+    .grid-container-presentation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+    .grid-container-logo-header {
+        flex-shrink: 0;
+        text-align: left;
+        width: auto;
+     
+    }
+
+
+    .grid-container-right-profile {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    
+
+    /* Adjust icon sizes for mobile */
+    .grid-item-notification img,
+    .grid-container-right-profile img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Adjust font size for mobile */
+    .grid-container-right-profile p,
+    .grid-container-desktop-menu p {
+        font-size: 14px;
+    }
+
+    /* Mobile Hamburger Button  */
+    .hamburger-menu {
+        display: block;
+        /* background-color: #9b9a9a; */
+        color: rgb(9, 8, 8);
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        position: absolute;
+
+        left: 20px;
+        top: 20px;
+        z-index: 10;
+    }
+
+
+    /*  Initially hidden for mobile */
+    .mobile-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        visibility: hidden; /* Hidden by default */
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out; /* Smooth transition for showing/hiding */
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .mobile-menu a:hover {
+        background-color: #f4f4f4;
+    }
+
+    /* Invisible checkbox */
+    input[type="checkbox"] {
+        display: none; 
+    }
+
+    /* Show mobile menu when checkbox is checked */
+    input[type="checkbox"]:checked + .mobile-menu {
+        visibility: visible;
+        opacity: 1; /* Make the mobile menu fully visible */
+    }
+}
+
+/* ========================== Desktop View ========================== */
+@media (min-width: 769px) {
+    .mobile-menu {
+        display: none;
+    }
+    
+ #hamburger-toggle {
+     display: none;
+ }
+}

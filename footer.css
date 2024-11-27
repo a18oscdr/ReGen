@@ -1,0 +1,440 @@
+/* General Styles */
+.shop-section {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+ }
+ 
+ 
+ .regen-form-section {
+    width: 100%;
+    max-width: 100%;
+    /*margin: 0 auto;*/
+    padding: 20px;
+    border: 1px solid #2b2929;
+    background-color: #f9f9f9;
+ }
+ 
+ /* Flexbox Layout */
+ .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Space between each section */
+ }
+ 
+ 
+ /* Form Row Styling */
+ .form-row {
+    display: flex;
+    justify-content: flex-start;  /* Align items to the left */
+    gap: 10px;  /* Space between items horizontally */
+    flex-wrap: wrap;  /* Allow wrapping of items if the screen is narrow */
+ }
+ 
+ /* Form Item Styling */
+ .form-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%  /* Max width for form fields */
+ }
+ 
+ .form-item label {
+    margin-bottom: 5px;
+    font-weight: bold;
+ }
+ 
+ .form-item input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+ }
+ 
+ .form-item button {
+    padding: 12px;
+    border: none;
+    background-color: #02070c;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+ 
+ .form-item button:hover {
+    background-color: #0056b3;
+ }
+ 
+ .form-item .regen-newsletter__terms {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #0b0b0b;
+ }
+ 
+ .form-item .regen-newsletter__terms a {
+    color: #030910;
+    text-decoration: none;
+ }
+ 
+ .form-item .regen-newsletter__terms a:hover {
+    text-decoration: underline;
+ }
+ 
+ /* Styling for large screens */
+ @media (min-width: 768px) {
+    .form-item {
+ 
+        max-width: 48%;  /* Adjust for larger screens */
+    }
+ }
+ 
+ /* Responsive design */
+ @media (max-width: 768px) {
+    .form-item {
+        max-width: 100%;  /* Full width on small screens */
+    }
+    .form-row {
+        flex-direction: column;  /* Stack inputs vertically */
+    }
+ }
+ 
+  
+    
+ /* Footer Message Adjustments */
+ .footer-message p:last-of-type {
+    margin-bottom: 0;
+ }
+   .social-icons-container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between icons */
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: -20px;
+    
+ 
+   }
+ 
+ 
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between the icons */
+ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -20px;
+ }
+ 
+ 
+ 
+ /* Styling for individual social icon links */
+ .social-icons li {
+    display: inline-block;
+ }
+ 
+ .social-icons a {
+    display: block;
+    width: 40px; /* Set a fixed size for icons */
+    height: 40px;
+    background-color: #e4e4e4; /* Light grey background */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+ }
+ 
+ /* Hover  */
+ .social-icons a:hover {
+    background-color: #333; 
+    transform: scale(1.1); 
+ }
+ 
+ .social-icons a svg {
+    width: 20px;
+    height: 20px;
+    fill: #333; 
+    transition: fill 0.3s ease;
+ 
+ }
+ 
+ /* Hover */
+ .social-icons a:hover svg {
+    fill: #fff; 
+ }
+ 
+ 
+ @media (max-width: 767px) {
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
+    .social-icons a svg {
+        width: 18px;
+        height: 18px;
+    }
+ }
+ 
+ .show-for-sr {
+ 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+ }
+ 
+ 
+ /*  SECOND PART  FOOTER  */
+ 
+ .grid-container-medium-footer {
+    align-self: stretch;
+    color: var(--Black, #111);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+    display: grid; /* We use grid layout here */
+    grid-template-columns: repeat(1, 1fr); /* Default: 1 column for mobile-first */
+    grid-template-rows: repeat(5, auto); /* 5 rows for the footer sections */
+    grid-gap: 20px; /* Spacing between grid items (rows and columns) */
+    padding: 20px;
+    width: 100%;
+ align-items: center;
+    justify-items: center; 
+    gap: 55px; 
+ }
+ /* Style for each footer section */
+ .grid-container-medium-footer {
+    border: 1px solid #ddd; 
+    padding: 15px;
+    background-color: #f9f9f9;
+    width: 100%; 
+ text-align: center;
+ border: 1px solid black;
+ 
+ }
+ 
+ 
+ 
+ .grid-container-medium-footer ul {
+    list-style: none;
+    padding: 0;
+ }
+ 
+ 
+ .grid-container-medium-footer p {
+    margin: 5px 0;
+ }
+ 
+ 
+ .grid-container-medium-footer li:hover {
+    background-color: #f1f1f1; /* Light background on hover */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+    transition: background-color 0.3s ease; /* Smooth transition */
+ }
+ 
+ /* Optional: You can also add text color change on hover */
+ .grid-container-medium-footer li:hover p {
+    color: #007BFF; /* Change text color on hover */
+ } 
+ 
+ /* For mobile screens (max-width: 767px) */
+ @media (max-width: 767px) {
+   .grid-container-medium-footer {
+ 
+     grid-template-columns: 1fr;
+   }
+ 
+   /* Targeting the first <li> inside each <ul> */
+   .grid-container-medium-footer > div > ul > li:first-child {
+     display: block;
+     border-bottom: 1px solid #1d1d1d;
+     padding-bottom: 10px;
+     padding-right: 460px; /* Give space on the right for the "+" sign */
+      position: relative; /* Make this the containing block for positioning */
+     width: 100%;
+   }
+ 
+ 
+ 
+   /* Add the "+" sign to the first <li> */
+   .grid-container-medium-footer > div > ul > li:first-child::after {
+     content: "+"; /* The "+" sign */
+     position: absolute;
+     right: -50px; /* Position it towards the right side */
+     top: 50%; /* Vertically center it */
+     transform: translateY(-50%); /* Adjust vertical position */
+     font-size: 18px; /* Size of the "+" sign */
+     color: #000; /* Color of the "+" sign */
+ 
+   }
+ 
+   /* Style for the first <p> in the first <li> */
+   .grid-container-medium-footer > div:not(:first-child) > ul > li:first-child p {
+     font: weight 0;
+     text-transform: uppercase;
+   }
+ 
+   /* Hide all other <li> elements except the first one */
+   .grid-container-medium-footer > div > ul > li:not(:first-child) {
+     display: none;
+   }
+ }
+ 
+ 
+ /* For larger screens (min-width: 768px) */
+ @media (min-width: 768px) {
+   .grid-container-medium-footer {
+     grid-template-columns: repeat(5, 1fr);
+   }
+ 
+ 
+   /* Remove the "+" sign on larger screens */
+   .grid-container-medium-footer > div > ul > li:first-child::after {
+     content: none; /* Remove the "+" sign */
+   }
+ }
+ 
+  /*Medium Garanti*/
+ .grid-container-medium-garanti {
+         display: flex;
+         justify-content: flex-start; /* Distribute items with space between */
+         align-items: center; 
+         gap: 5px; /* Optional: Adds space between items */
+     }
+ 
+ 
+     .item {
+         display: flex;
+         flex-direction: column; /* Stack the image and text vertically */
+         align-items: center; /* Center align items horizontally */
+         text-align: center; /* Center text inside the item */
+         padding: 8px;
+         border: 0px solid #ccc;
+         border-radius: 8px;
+         width: 150px;
+ 
+     }
+     .item{
+ 
+         flex-grow: 1;
+     }
+ 
+ 
+     .item img {
+         max-width: 80px;
+         height: auto; 
+         margin-bottom: 5px; /* Space between image and text */
+     }
+ 
+     .item p {
+         font-size: 14px;
+         color: #333;
+         margin: 0;
+ 
+     }
+     .grid-container-medium-garanti :hover {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .grid-container-medium-garanti :hover p {
+    color: #007BFF;
+  }
+  .grid-container-medium-garanti :hover img{
+     transform: scale(1.3);  
+  }
+ 
+ 
+     
+ 
+ 
+  /*  THIRD PART FOOTER payment */
+ 
+  .footer-message {
+  position: relative;
+  }
+ 
+ 
+ 
+  .footer-text {
+  position: absolute;
+  top: -20px; /* Adjust this value to position it exactly over the payment icons */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  z-index: 10; /* Make sure the text stays above the payment icons */
+ }
+ 
+  .footer-text p {
+  margin: 0;
+  }
+ 
+  .footer-delibery {
+   font-family: Montserrat, Arial, sans-serif;
+    text-transform: unset;
+    font-weight: 400;
+    margin: 20px 0;
+    position: absolute;
+    left: 20px;
+ 
+  }
+  @media (max-width: 767px) {
+     .footer-delibery {
+         display: none;
+     
+  }
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+  .grid-container-payment {
+    display: flex;
+    justify-content: space-between; 
+    gap: 5px;
+    width: 80%; /* Makes the grid container 80% of the footer width */
+    margin: 0 auto; 
+    padding-top: 10px;
+ 
+  }
+  .grid-container-payment div {
+    flex: 0 1 calc(12% - 5px);
+    text-align: center;
+  }
+ 
+  .grid-container-payment img {
+ height: auto; 
+ width: Fixed (415px)px;
+ top: 5905px;
+  left: 513px;
+ gap: 8px;
+ opacity: 1px;
+ margin: 0;
+ }
+  .grid-container-payment :hover img {
+     transform: scale(1.4);  
+     cursor: pointer;
+ }
+ 

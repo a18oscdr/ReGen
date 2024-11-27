@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://oscardrabik.com/regen/pictures/favicon.png">
+    <title>ReGen Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+    <!-- <link rel="stylesheet" href="pop-up.css"> -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="grid-container-notification">
+        <div class="grid-item-notification">
+            <img src="https://oscardrabik.com/regen/pictures/garanti-vector.svg" alt="två års garanti" />
+            <p>två års garanti</p>
+        </div>
+        <div class="grid-item-notification">
+            <img src="https://oscardrabik.com/regen/pictures/kop.svg" alt="köp nu" />
+            <p>köp nu</p>
+        </div>
+        <div class="grid-item-notification">
+            <img src="https://oscardrabik.com/regen/pictures/atervunnen.svg" alt="återvunnen material" />
+            <p>återvunnen material</p>
+        </div>
+    </div>
+
+    <div class="grid-container-top-bar">
+        <div class="grid-container-presentation">
+            <!-- Mobile hamburger button -->
+            <label for="hamburger-toggle" class="hamburger-menu">&#9776;</label>
+
+            <div class="grid-container-logo-header">
+                <img src="https://oscardrabik.com/regen/pictures/logotype.svg" alt="logo-header" />
+            </div>
+
+            <div class="grid-container-right-profile">
+                <div><img src="https://oscardrabik.com/regen/pictures/sprak.svg" alt="språk" /><p>språk</p></div>
+                <div><img src="https://oscardrabik.com/regen/pictures/profil.svg" alt="profile" /><p>profile</p></div>
+                <div><img src="https://oscardrabik.com/regen/pictures/kop.svg" alt="kassa" /><p>kassa</p></div>
+            </div>
+        </div>
+
+        <div class="grid-container-desktop-menu">
+            <div><p>NYTT</p></div>
+            <div><p>KLOCKOR</p></div>
+            <div><p>ACCESOARER</p></div>
+            <div><p>VÅR HISTORIA</p></div>
+            <div class="grid-container-search">
+                <div><img src="https://oscardrabik.com/regen/pictures/Frame%2055.svg" alt="search" /></div>
+                <div><img src="https://oscardrabik.com/regen/pictures/lupa.svg" alt="lupa" /></div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Invisible checkbox that controls the mobile menu -->
+    <input type="checkbox" id="hamburger-toggle">
+
+    
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+        <a href="#">NYTT</a>
+        <a href="#">KLOCKOR</a>
+        <a href="#">ACCESSOARER</a>
+        <a href="#">VÅR HISTORIA</a>
+</header>
+
+
+
+    
+     <!-- Sticky button -->
+     <img class="sticky-button" src="https://oscardrabik.com/regen/pictures/chat-bot-pop-up.svg" alt="chat-bubble">
+    <!-- Hero Section -->
+    <h1 class="mobile-h1-above-hero">HJÄLTEN I TIDEN</h1>
+    <section class="hero">
+        <div>
+            <img src="https://oscardrabik.com/regen/pictures/pink-watch-side-image.png">
+            <img id="hero-middle-pic" src="https://oscardrabik.com/regen/pictures/black-watch-front-image.png">
+            <img src="https://oscardrabik.com/regen/pictures/white-watch-side-image.png"> <!-- byt detta till riktigta sen och lägg till storlek i css -->
+        </div>
+        <h1 class="desktop-h1-inside-hero">HJÄLTEN I TIDEN</h1>
+        <p>Välj detaljer som speglar din stil.<br> Skräddarsy en tidlös klocka som är både exklusiv och hållbar, anpassad för just dig.</p>
+        <button class="watch-button">SKAPA DIN KLOCKA</button>
+    </section>
+
+    <!-- Watch Model Section -->
+    <section>
+        <div class="second-container">
+            <h1 class="h1-watchmodel-mobile">DETALJER SOM GÖR SKILLNAD<br></h1>
+            <h2 class="h2-watchmodel-mobile">MODELL ATLAS</h2>
+            <div class="watch-image-idk"><img src="https://oscardrabik.com/regen/pictures/Watch__teknikbild_desktop.png" alt="Teknikbild klocka"></div>
+            <div class="watch-image-idk-mobile"><img src="https://oscardrabik.com/regen/pictures/Watch_Teknikbild_mobile.png" alt="Teknikbild klocka"></div>
+            <div class="content-inside-second">
+                <h1 class="h1-watchmodel-desktop">DETALJER SOM GÖR SKILLNAD</h1>
+                <h2 class="h2-watchmodel-desktop">MODELL ATLAS</h2>
+                <p class="mobile-second-container-p">Med en innovativ design får du både design och funktion på handleden.</p>
+                <p class="desktop-second-container-p">Vår smarta klocka kombinerar avancerad teknik med hållbarhet, där varje komponent är noggrant utvald för att minska miljöpåverkan. Med en innovativ design och miljövänliga material får du både design och funktion på handleden.</p>
+                <button id="utforska-button" class="watch-button">UTFORSKA MER</button>
+                <div class="specs">
+                    <div class="spec-item">Titanium <br>5g</div>
+                 
+                    <div class="spec-item">Waterresistant <br>3.7</div>
+             
+                    <div class="spec-item">1000mm <br>Indeed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- "Featured by" section -->
+    <section class="featured-by">
+        <h3 class="h3-featured-by">Uppmärksammad av</h3>
+        <div class="logos">
+            <img src="https://oscardrabik.com/regen/pictures/vogue-logotype-desktop.svg" alt="VOGUE">
+            <img src="https://oscardrabik.com/regen/pictures/bazaar-logotype-desktop.svg" alt="BAZAAR">
+            <img src="https://oscardrabik.com/regen/pictures/cafe-logotype-desktop.svg" alt="Cafe">
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories">
+        <div class="grid-category"><img src="https://oscardrabik.com/regen/pictures/armband-image-desktop.png" alt="armband"><p>Armband</p></div>
+        <div class="grid-category"><img src="https://oscardrabik.com/regen/pictures/green-watch-image.png" alt="klockor"><p>Klockor</p></div>
+        <div class="grid-category"><img src="https://oscardrabik.com/regen/pictures/gavor2.png" alt="gåvor"><p>Gåvor</p></div>
+        <div class="grid-category"><img src="https://oscardrabik.com/regen/pictures/coming.png" alt="Kommer snart"><p>Kommer snart</p></div>
+    </section>
+    <div class="responsive-container">
+        <!-- Image container -->
+        <div class="gray-box">
+            <img class="girl-image-desktop" src="https://oscardrabik.com/regen/pictures/girl-with-clock.png" alt="Girl with clock visible on arm">
+            <!-- <img class="girl-image-mobile" src="https://oscardrabik.com/regen/pictures/girl-with-clock.png" alt="Girl with clock visible on arm"> -->
+
+        </div>
+        <!-- Text content for desktop view -->
+        <div class="text-content">
+            <h1 >FRAMTIDEN HOS REGEN</h1>
+            <p>Välj detaljer som speglar din stil. Skräddarsy en tidlös klocka som är både exklusiv och hållbar, anpassad för just dig.</p>
+            <a href="#">Läs mer om våra hållbarhets initiativ</a>
+        </div>
+    </div>
+    <!-- Values Section -->
+    <h3 class="values-title">VÅRA VÄRDERINGAR</h3>
+ <!-- Desktop Layout -->
+ <div class="content-container">
+    <div class="content-item">
+      <img src="https://oscardrabik.com/regen/pictures/community-desktop.png" alt="Vårat community">
+      <h3>VÅRAT COMMUNITY</h3>
+      <p>Vi tror på tidens kraft att skapa ögonblick som varar.<br>
+        Våra klockor är mer än bara verktyg för att hålla reda på timmar och minuter; de är en påminnelse om vikten av varje ögonblick <br>
+        . Vi strävar efter att kombinera tidlös design med modern funktionalitet, och våra produkter speglar vårt engagemang för kvalitet,<br>
+        hållbarhet och innovation. För oss handlar det inte bara om att hålla tiden – utan att göra varje sekund betydelsefull.
+    </p>
+    </div>
+    <div class="content-item">
+      <img src="https://oscardrabik.com/regen/pictures/material.png" alt="våra material">
+      <h3>VÅRA MATERIAL</h3>
+      <p>Våra klockor är mer än tidmätare – de uttrycker vårt engagemang för kvalitet och hållbarhet.
+         Med återvunna metaller, miljövänliga alternativ och veganska material skapar vi produkter skonsamma mot planeten. 
+         Varje detalj är designad för att minimera miljöpåverkan utan att kompromissa med funktion eller estetik. 
+        Med ReGen bär du en klocka som inte bara visar tiden, utan även vårt engagemang för framtiden.
+    </p>
+    </div>
+    <div class="content-item">
+      <img src="https://oscardrabik.com/regen/pictures/respons.png" alt="vårt ansvar">
+      <h3>VÅRT ANSVAR</h3>
+      <p>Vi sätter social hållbarhet i fokus genom rättvisa arbetsvillkor och stöd till lokala samhällen,
+         samtidigt som vi använder miljövänliga material och klimatneutrala processer. 
+         Vår vision är att kombinera stil och funktion med ett tankesätt för att minska vårt fotavtryck och inspirera till förändring. 
+        För oss handlar det inte bara om att hålla tiden – utan att göra varje sekund betydelsefull.
+    </p>
+    </div>
+  </div>
+
+  <!-- Mobile Slideshow -->
+  <div class="slideshow-container">
+    <div class="slide active">
+      <img src="https://oscardrabik.com/regen/pictures/community-mobile.png" alt="vårat Community">
+      <h3>VÅRAT COMMUNITY</h3>
+      <p>Vi tror på tidens kraft att skapa ögonblick som varar.<br>
+        Våra klockor är mer än bara verktyg för att hålla reda på timmar och minuter; de är en påminnelse om vikten av varje ögonblick <br>
+        . Vi strävar efter att kombinera tidlös design med modern funktionalitet, och våra produkter speglar vårt engagemang för kvalitet,<br>
+        hållbarhet och innovation. För oss handlar det inte bara om att hålla tiden – utan att göra varje sekund betydelsefull.
+    </p>
+      <div class="arrow-container">
+        <button class="arrow left">&lt;</button>
+        <button class="arrow right">&gt;</button>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://oscardrabik.com/regen/pictures/image-vara-material.png" alt="våra Material">
+      <h3>VÅRA MATERIAL</h3>
+      <p>Våra klockor är mer än tidmätare – de uttrycker vårt engagemang för kvalitet och hållbarhet. 
+        Med återvunna metaller, miljövänliga alternativ och veganska material skapar vi produkter skonsamma mot planeten. 
+        Varje detalj är designad för att minimera miljöpåverkan utan att kompromissa med funktion eller estetik.
+         Med ReGen bär du en klocka som inte bara visar tiden, utan även vårt engagemang för framtiden.
+    </p>
+      <div class="arrow-container">
+        <button class="arrow left">&lt;</button>
+        <button class="arrow right">&gt;</button>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://oscardrabik.com/regen/pictures/image-vart-ansvar.png" alt="Vårat ansvar">
+      <h3>VÅRT ANSVAR</h3>
+      <p>Vi sätter social hållbarhet i fokus genom rättvisa arbetsvillkor och stöd till lokala samhällen, 
+        samtidigt som vi använder miljövänliga material och klimatneutrala processer.
+         Vår vision är att kombinera stil och funktion med ett tankesätt för att minska vårt fotavtryck och inspirera till förändring. 
+        För oss handlar det inte bara om att hålla tiden – utan att göra varje sekund betydelsefull.
+      </p>
+      <div class="arrow-container">
+        <button class="arrow left">&lt;</button>
+        <button class="arrow right">&gt;</button>
+      </div>
+    </div>
+  </div>
+<!-- POPUP HERE -->
+<div class="popup-container">
+    <div class="popup desktop">
+      <div class="gray-box-popup"> <img src="https://oscardrabik.com/regen/pictures/Armband_Desktop_1716_2280%201.png"> </div>
+      <div class="content-popup">
+        <span class="close-btn">&times;</span>
+        <img src="https://oscardrabik.com/regen/pictures/regen-logotype.svg" alt="Logo" class="logo">
+        <h2>FÅ 15% RABATT</h2>
+        <p>på din första beställning genom att registrera dig på vårt nyhetsbrev nedan.</p>
+        <form id="popup-form">
+        <input type="text" placeholder="DITT NAMN" id="name">
+        <input type="email" placeholder="DIN MEJLADRESS" id="email">
+        <button>REGISTRERA DIG</button>
+        </form>
+        <p class="nej-tack">Nej Tack</p>
+        <p class="terms">
+          *Genom att registrera dig hos oss så accepterar du ReGen's <a href="#">användarvillkor</a> och <a href="#">policy's</a>.
+        </p>
+        
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://oscardrabik.com/regen/script.js"></script> <!-- Link to external JS -->
+
+
+    <!-- Newsletter Section -->
+
+    
+  <footer>    
+     <!-- Global Template Start (typically inside body tag) -->
+     <div id="first-shop-block" class="shop-section">
+         <div class="section regen-form-section">
+             <div class="grid-container-footer">
+                 <form method="post" action="/contact#contact_form" id="contact_form" class="regen-newsletter">
+                     <input type="hidden" name="form_type" value="customer">
+                     <input type="hidden" name="utf8" value="✓">
+      
+                     <div class="form-wrapper">
+                         <!-- Header -->
+                         <div class="form-row">
+                             <div class="form-item join-us">Gå med oss</div>
+                         </div>
+      
+                         <!-- Description -->
+                         <div class="form-row">
+                             <div class="form-item regen-newsletter__description">
+                                 Registrera dig på vårat nyhetsbrev genom att fylla i din information nedan
+                             </div>
+                         </div>
+      
+                         <!-- Input Fields -->
+                         <div class="form-row">
+                             <div class="form-item">
+                                 <label for="first_name">DITT NAMN</label>
+                                 <input id="first_name" type="text" name="contact[first_name]" placeholder="DITT NAMN">
+                             </div>
+                             <div class="form-item">
+                                 <label for="email">DIN MEJLADRESS</label>
+                                 <input id="email" type="email" name="contact[email]" placeholder="DIN MEJLADRESS">
+                             </div>
+                         </div>
+      
+                         <!-- Submit Button -->
+                         <div class="form-row">
+                             <div class="form-item">
+                                 <button type="submit">REGISTRERA DIG & FÅ 15% RABATT</button>
+                             </div>
+                         </div>
+      
+                         <!-- Terms and Conditions -->
+                         <div class="form-row">
+                             <div class="form-item regen-newsletter__terms">
+                                 If you click here, you agree with all our policies
+                                 <a href="/pages/terms-and-conditions" target="_blank">Terms and Conditions</a> and 
+                                 <a href="/pages/privacy-policy" target="_blank">Privacy Policy.</a>
+                             </div>
+                         </div>
+                     </div>
+      
+                     <!-- Form Messages -->
+                     <div class="regen-newsletter__messages"></div>
+                 </form>
+             </div>
+         </div>
+      </div>
+      <!-- Global Template End -->
+     
+      
+          </div>
+          <div class="grid-container-medium-garanti">
+             <div class="item">
+                 <img src="https://oscardrabik.com/regen/pictures/garanti-vector.svg" alt="Två Års Garanti" />
+                 <p>Två Års Garanti</p>
+             </div>
+             <div class="item">
+                 <img src="https://oscardrabik.com/regen/pictures/kop.svg" alt="Köp Nu, Betala Senare" />
+                 <p>Köp Nu, Betala Senare</p>
+             </div>
+         </div>
+           
+     
+             <!-- You can add more items here if needed -->
+         </div>
+          
+        <div class="grid-container-medium-footer">
+     
+         <div class="support-footer">
+             <ul>
+                 <li><p>SUPPORT</p></li>
+                 <li><p>Kontakta oss</p></li>
+                 <li><p>FAQ</p></li>
+                 <li><p>Frakt</p></li>
+                 <li><p>Tillgänglighet</p></li>
+             </ul>
+         </div>
+     
+         <div class="om-oss-footer">
+             <ul>
+                 <li><p>OM OSS</p></li>
+                 <li><p>Vår berättelse</p></li>
+                 <li><p>Våra värderingar</p></li>
+                 <li><p>Butik Platser</p></li>
+             </ul>
+     
+         </div>
+     
+         <div class="shopa-footer">
+             <ul>
+                 <li><p>SHOPPA</p></li>
+                 <li><p>Returer</p></li>
+                 <li><p>Garanti</p></li>
+                 <li><p>Presentkort</p></li>
+             </ul>
+         </div>
+     
+         <div class="hållbarhet-footer">
+             <ul>
+                 <li><p>HÅLLBARHET</p></li>
+                 <li><p>Allmänna villkor</p></li>
+                 <li><p>Sekretesspolicy</p></li>
+             </ul>
+         </div>
+     
+         <div class="konto-footer">
+             <ul>
+                 <li><p>MITT KONTO</p></li>
+                 <li><p>Inloggning</p></li>
+                 <li><p>Skapa konto</p></li>
+             </ul>
+         </div>
+     </div>
+     
+     <div class="footer-delibery">
+       <p>Levereras till: Sverige</p>
+     
+     </div>
+     
+            <div class="social-icons-container">
+                <ul class="social-icons grid-x align-middle">
+            <li>
+              <a href="https://www.instagram.com/regen" title="Regen on Instagram">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-instagram" viewBox="0 0 100 100">
+        <g fill="#010101"><path d="M72.4 0H27.6C12.38 0 0 12.38 0 27.6v44.8C0 87.62 12.38 100 27.6 100h44.8c15.22 0 27.6-12.38 27.6-27.6V27.6C100 12.38 87.62 0 72.4 0zm18.73 72.4c0 10.32-8.4 18.72-18.72 18.72H27.6c-10.32 0-18.72-8.4-18.72-18.72V27.6c0-10.32 8.4-18.72 18.72-18.72h44.8c10.33 0 18.72 8.4 18.72 18.72.01 0 .01 44.8.01 44.8z"></path><path d="M50 24.23c-14.21 0-25.77 11.56-25.77 25.77S35.79 75.77 50 75.77 75.77 64.21 75.77 50c0-14.21-11.56-25.77-25.77-25.77zm0 42.66c-9.32 0-16.9-7.58-16.9-16.89S40.68 33.1 50 33.1 66.9 40.68 66.9 50 59.32 66.89 50 66.89zm26.85-50.18c-1.71 0-3.39.69-4.6 1.9a6.562 6.562 0 0 0-1.91 4.6c0 1.71.7 3.39 1.91 4.6a6.552 6.552 0 0 0 4.6 1.9c1.72 0 3.39-.7 4.6-1.9a6.517 6.517 0 0 0 0-9.2 6.552 6.552 0 0 0-4.6-1.9z"></path></g>
+      </svg>
+      
+                <span class="show-for-sr">Instagram</span>
+              </a>
+            </li>
+     
+            <li>
+              <a href="https://www.facebook.com/dissh" title="DISSH on Facebook">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 100 100">
+        <path fill="#010101" d="M75 .02L62.03 0C47.46 0 38.05 9.66 38.05 24.61v11.35H25.01c-1.13 0-2.04.91-2.04 2.04v16.44c0 1.13.91 2.04 2.04 2.04h13.04v41.48c0 1.13.91 2.04 2.04 2.04H57.1c1.13 0 2.04-.91 2.04-2.04V56.48h15.25c1.13 0 2.04-.91 2.04-2.04V38a2.045 2.045 0 0 0-2.04-2.04H59.14v-9.62c0-4.62 1.1-6.97 7.12-6.97H75c1.13 0 2.04-.91 2.04-2.04V2.06C77.03.94 76.12.02 75 .02z"></path>
+      </svg>
+      
+                <span class="show-for-sr">Facebook</span>
+              </a>
+            </li>
+     
+            <li>
+              <a href="https://www.pinterest.com.au/disshofficial/" title="DISSH on Pinterest">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-pinterest" viewBox="0 0 100 100">
+        <path fill="#010101" d="M31.78 97.49c2.51-4.09 6.26-10.78 7.65-16.13.75-2.88 3.83-14.63 3.83-14.63 2.01 3.82 7.87 7.06 14.1 7.06 18.56 0 31.92-17.06 31.92-38.27C89.29 15.21 72.7 0 51.36 0 24.81 0 10.71 17.82 10.71 37.23c0 9.02 4.8 20.26 12.49 23.83 1.17.54 1.79.3 2.06-.82.2-.85 1.24-5.03 1.71-6.98.15-.62.08-1.15-.43-1.76-2.54-3.08-4.58-8.75-4.58-14.04 0-13.57 10.27-26.7 27.78-26.7 15.11 0 25.7 10.3 25.7 25.03 0 16.64-8.4 28.17-19.34 28.17-6.04 0-10.56-4.99-9.11-11.12 1.73-7.31 5.1-15.21 5.1-20.48 0-4.72-2.54-8.67-7.78-8.67-6.17 0-11.13 6.39-11.13 14.94 0 5.45 1.84 9.13 1.84 9.13s-6.1 25.78-7.21 30.58c-1.24 5.31-.75 12.8-.21 17.67 0 0 .04 1.96.92 3.98 2.29-1.21 3.26-2.5 3.26-2.5z"></path>
+      </svg>
+      
+                <span class="show-for-sr">Pinterest</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@dissh" title="DISSH on TikTok">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tiktok" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2882 3333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+        <path d="M2142 77c25 207 94 370 206 483 109 110 262 175 457 187 44 3 77 39 77 82v506c0 45-36 82-81 82-136 13-263-3-390-43-86-27-172-65-261-112v804c0 381-126 686-317 900-140 157-314 266-501 322s-386 60-574 5c-231-67-445-221-597-470C64 2664 8 2472 1 2277c-6-180 28-364 109-530 82-167 210-317 390-427 176-108 402-177 682-187 45-2 83 34 85 79v536c0 43-33 78-75 82-39 7-79 15-119 24-39 9-77 20-114 33-105 35-186 85-234 152-47 65-66 151-50 263 21 151 135 265 270 311 56 19 115 27 172 21 56-6 110-25 158-59 122-87 205-275 180-596V80c0-45 37-82 82-82h523c44 0 79 34 82 77zm89 598c-125-126-206-298-242-510h-370v1809c29 385-85 619-249 737-72 52-153 81-236 90-81 9-165-2-243-29-189-65-348-227-379-444-22-157 8-283 80-382 70-97 179-165 316-211 41-14 84-26 128-37 23-6 45-11 68-15v-378c-210 18-382 75-517 158-151 93-259 218-328 359-69 142-99 299-93 452 6 167 53 331 136 466 129 211 309 342 503 397 157 45 324 42 482-5 158-48 306-140 425-274 166-186 275-453 275-791v-945c0-14 4-29 12-42 23-39 74-52 113-28 124 74 238 131 350 166 85 27 170 40 257 40V905c-201-26-363-104-486-228z" fill-rule="nonzero"></path>
+      </svg>
+      
+                <span class="show-for-sr">TikTok</span>
+              </a>
+            </li>
+     
+      </ul>
+      
+              </div>
+     
+              
+     
+     
+     
+           
+              <div class="footer-message">
+                <div class="footer-text">
+                  <p>© ReGen 2024</p>
+                </div>
+     
+            <div class="grid-container-payment">
+                <div><img src="https://oscardrabik.com/regen/pictures/payment-american-express-icon.svg" alt="payment icon method" /></div>
+                <div><img src="https://oscardrabik.com/regen/pictures/payment-apple-pay-icon-desktop.svg" alt="payment icon method" /></div>
+                <div><img src="https://oscardrabik.com/regen/pictures/payment-paypal-icon.svg" alt="payment icon method" /></div>
+                <div><img src="https://oscardrabik.com/regen/pictures/payment-mastercard-icon.svg" alt="payment icon method" /></div> 
+                <div><img src="https://oscardrabik.com/regen/pictures/image%209.svg" alt="payment icon method" /></div>
+                <div><img src="https://oscardrabik.com/regen/pictures/payment-icon-visa.svg" alt="payment icon method" /></div>
+                <div><img src="https://oscardrabik.com/regen/pictures/payment-google-pay-icon.svg" alt="payment icon method" /></div>
+              </div>
+     
+     
+                
+    </footer>
+<!--     <footer>
+        <p>© ReGen 2024</p>
+        <div class="socials">
+            <a href="https://www.w3schools.com">Instagram</a>
+            <a href="https://www.w3schools.com">Facebook</a>
+            <a href="https://www.w3schools.com">Linkedin</a>
+            <a href="https://www.w3schools.com">Tiktok</a>        
+        </div>
+    </footer> -->
+</body>
+</html>
